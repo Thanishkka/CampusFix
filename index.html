@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusFix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <h2>CampusFix</h2>
+    <p>Report. Track. Improve.</p>
+  </nav>
+
+  <main>
+
+    <section>
+      <h1>Make Your Campus Better</h1>
+      <p>Report common campus problems so they can be noticed and resolved.</p>
+    </section>
+
+    <section>
+      <h2>Campus Status</h2>
+
+      <div class="dashboard">
+
+        <div class="stat-card">
+          <p>Total Issues</p>
+          <h3 id="total-count">0</h3>
+        </div>
+
+        <div class="stat-card">
+          <p>Pending</p>
+          <h3 id="pending-count">0</h3>
+        </div>
+
+        <div class="stat-card">
+          <p>In Progress</p>
+          <h3 id="progress-count">0</h3>
+        </div>
+
+        <div class="stat-card">
+          <p>Resolved</p>
+          <h3 id="resolved-count">0</h3>
+        </div>
+
+      </div>
+
+      <div class="graph">
+
+        <p>Pending</p>
+        <div class="bar-background">
+          <div class="bar pending-bar" id="pending-bar"></div>
+        </div>
+
+        <p>In Progress</p>
+        <div class="bar-background">
+          <div class="bar progress-bar" id="progress-bar"></div>
+        </div>
+
+        <p>Resolved</p>
+        <div class="bar-background">
+          <div class="bar resolved-bar" id="resolved-bar"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Report an Issue</h2>
+
+      <form id="issue-form">
+
+        <label for="title">Issue Title</label>
+        <input
+          type="text"
+          id="title"
+          placeholder="Example: Broken fan in classroom"
+          required
+        >
+
+        <label for="category">Category</label>
+        <select id="category">
+          <option>Electrical & Power</option>
+          <option>Classroom Equipment</option>
+          <option>Cleanliness & Hygiene</option>
+          <option>Water & Plumbing</option>
+          <option>Internet & Technology</option>
+          <option>Hostel & Accommodation</option>
+          <option>Safety & Security</option>
+          <option>Transport & Parking</option>
+          <option>Food & Cafeteria</option>
+          <option>Grounds & Facilities</option>
+          <option>Accessibility</option>
+          <option>Other</option>
+        </select>
+
+        <label for="location">Location</label>
+        <input
+          type="text"
+          id="location"
+          placeholder="Example: AB-1, Room 204"
+          required
+        >
+
+        <label for="description">Description</label>
+        <textarea
+          id="description"
+          placeholder="Describe the issue clearly"
+          required
+        ></textarea>
+
+        <label for="priority">Priority</label>
+        <select id="priority">
+          <option>Low</option>
+          <option selected>Medium</option>
+          <option>High</option>
+        </select>
+
+        <button type="submit">Report Issue</button>
+
+      </form>
+    </section>
+
+    <section>
+      <h2>Reported Issues</h2>
+
+      <label for="search-input">Search Issues</label>
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search by title, category, or location"
+      >
+
+      <label for="status-filter">Filter by Status</label>
+      <select id="status-filter">
+        <option value="All">All Issues</option>
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Resolved">Resolved</option>
+      </select>
+
+      <p id="no-results">No issues found. Try another search or filter.</p>
+
+      <div id="issues-list"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
