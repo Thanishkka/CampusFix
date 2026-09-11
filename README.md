@@ -1,4 +1,5 @@
 # CampusFix
+CampusFix is a simple web application that lets students report, search, and track common campus issues through an interactive dashboard.
 # CampusFix
 ### A frontend campus issue-reporting portal
 
