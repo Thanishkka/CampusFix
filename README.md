@@ -4,7 +4,7 @@
 
 CampusFix is a beginner-friendly single-page web application that helps students report and discover common campus issues in one place.
 
-Users can report issues such as broken projectors, faulty fans, slow Wi-Fi, water leakage, cleanliness concerns, damaged furniture, and hostel maintenance problems. The interface immediately displays each new report and updates a live issue dashboard.
+Users can report common issues such as broken projectors, faulty fans, slow Wi-Fi, water leakage, cleanliness concerns, damaged furniture, and hostel maintenance problems. The interface immediately displays each new report and updates a live issue dashboard.
 
 ---
 
