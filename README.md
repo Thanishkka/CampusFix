@@ -45,7 +45,6 @@ For example, a student may notice:
 - A projector that does not turn on
 - Slow Wi-Fi in the library
 - A leaking tap in a hostel
-- An unclean washroom
 - A broken streetlight near a pathway
 
 CampusFix provides a simple interface for recording these concerns in a structured way. It collects the issue title, category, location, description, and priority.
@@ -101,6 +100,7 @@ CampusFix/
 ├── style.css
 ├── script.js
 ├── README.md
+├── demovideo.mp4
 └── screenshots/
     ├── home-page.png
     ├── report-form.png
@@ -466,6 +466,9 @@ The current version is intentionally frontend-only. The following features could
 ---
 
 ## Screenshots
+### Visual Studio Code
+<img width="959" height="507" alt="image" src="https://github.com/user-attachments/assets/35099493-3def-4bb8-8c75-305a1c929d65" />
+
 
 ### Home Page
 
